@@ -15,7 +15,7 @@ namespace modul_3_103022300050
         public int left_num;
         public int right_num;
         public int[] arr_num = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        public int hasil;
+        public int hasil_num;
         public int n = 1;
         public Form1()
         {
@@ -85,10 +85,10 @@ namespace modul_3_103022300050
             right_num = int.Parse(labelOutput.Text);
             for (int i = 0; i < arr_num.Length; i++)
             {
-                hasil = hasil + arr_num[i];
+                hasil_num = hasil_num + arr_num[i];
             }
-            hasil = hasil + right_num;
-            labelOutput.Text = hasil.ToString();
+            hasil_num = hasil_num + right_num;
+            labelOutput.Text = hasil_num.ToString();
         }
     }
 }
